@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "cormorant garamond";
+    src: url(./fonts/static/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f1e8;
+    color: #302d2c;
+    font-family: "Heebo", sans-serif;
+}
+
+.notice {
+    background-color: #403331;
+    color: white;
+    padding: 60px 48px;
+    margin-top: 150px;
+}
+
+.notice p {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 1050px;
+    margin-bottom: 26px;
+}
+ span{
+    text-decoration: underline;
+ }
+ 
+.notice p:last-child {
+    margin-bottom: 0;
+}
+
+.accessibility-page {
+    padding: 90px 4%;
+}
+
+.accessibility-page h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 82px;
+    font-weight: 400;
+    color: #403331;
+    margin-bottom: 20px;
+}
+
+.accessibility-page h2 {
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #302d2c;
+    margin-top: 65px;
+    margin-bottom: 22px;
+}
+
+.accessibility-page p {
+    font-size: 20px;
+    line-height: 1.4;
+    max-width: 1050px;
+    margin-bottom: 25px;
+}
+
+.accessibility-page ul {
+    padding-left: 36px;
+    margin-top: 25px;
+    margin-bottom: 55px;
+}
+
+.accessibility-page li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+/* რესპონსივები */
+
+@media (max-width: 1200px) {
+
+    .accessibility-page {
+        padding: 70px 4%;
+    }
+
+    .accessibility-page h1 {
+        font-size: 65px;
+    }
+
+    .accessibility-page h2 {
+        font-size: 30px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .notice {
+        padding: 35px 5%;
+    }
+
+    .notice p {
+        font-size: 16px;
+    }
+
+    .accessibility-page {
+        padding: 55px 5%;
+    }
+
+    .accessibility-page h1 {
+        font-size: 48px;
+    }
+
+    .accessibility-page h2 {
+        font-size: 25px;
+        margin-top: 45px;
+    }
+
+    .accessibility-page p,
+    .accessibility-page li {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .accessibility-page h1 {
+        font-size: 40px;
+    }
+
+    .accessibility-page h2 {
+        font-size: 22px;
+    }
+
+}

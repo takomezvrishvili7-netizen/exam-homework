@@ -1,0 +1,377 @@
+@font-face {
+    font-family: "cormorant garamond";
+    src: url(./fonts/static/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.services {
+    width: 100%;
+    padding: 120px 15px 20px;
+}
+
+.service-heading h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 75px;
+    font-weight: normal;
+    color: #453735;
+    margin-bottom: 15px;
+}
+
+.service-heading p {
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    color: #453735;
+}
+
+.service-category {
+    margin-top: 120px;
+}
+
+.service-category h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 40px;
+    font-weight: normal;
+    color: #453735;
+    margin-bottom: 50px;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 10px;
+}
+
+.service-card img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    display: block;
+}
+
+.service-card p {
+    font-family: "Heebo", sans-serif;
+    font-size: 28px;
+    margin: 35px 20px 45px;
+    color: #453735;
+}
+
+.service-card a {
+    display: inline-block;
+    background-color: #813321;
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.service-card a:hover{
+    text-decoration: underline;
+}
+
+/* რესპონსივები */
+
+
+/* 1200px */
+
+@media (max-width: 1200px) {
+
+    .services {
+        background-color: white;
+        margin-top: 100px;
+        padding: 30px 25px;
+    }
+
+    .service-category {
+        background-color: white;
+        padding: 30px 25px;
+        margin-top: 100px;
+    }
+
+    .service-category + .service-category {
+        padding-top: 65px;
+    }
+
+    .service-container {
+        background-color: white;
+        gap: 20px;
+    }
+
+    .service-heading h1 {
+        font-size: 65px;
+    }
+
+    .service-category h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .service-card img {
+        height: 420px;
+    }
+
+    .service-card p {
+        font-size: 24px;
+        margin: 25px 10px 35px;
+    }
+
+    .service-card a {
+        margin-left: 10px;
+        padding: 12px 28px;
+    }
+}
+
+
+/* 1024px */
+
+@media (max-width: 1024px) {
+
+    .services {
+        padding: 100px 25px 30px;
+    }
+
+    .service-heading h1 {
+        font-size: 58px;
+    }
+
+    .service-heading p {
+        font-size: 18px;
+    }
+
+    .service-category {
+        margin-top: 85px;
+    }
+
+    .service-category h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .service-container {
+        gap: 18px;
+    }
+
+    .service-card img {
+        height: 350px;
+    }
+
+    .service-card p {
+        font-size: 21px;
+        margin: 22px 8px 30px;
+    }
+
+    .service-card a {
+        font-size: 16px;
+        padding: 11px 25px;
+        margin-left: 8px;
+    }
+}
+
+
+/* 768px */
+
+@media (max-width: 768px) {
+
+    .services {
+        padding: 90px 20px 30px;
+    }
+
+    .service-heading h1 {
+        font-size: 50px;
+    }
+
+    .service-heading p {
+        font-size: 17px;
+    }
+
+    .service-category {
+        margin-top: 75px;
+        padding: 25px 20px;
+    }
+
+    .service-category h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 18px;
+        padding: 0;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card p {
+        font-size: 21px;
+        margin: 20px 5px 25px;
+    }
+
+    .service-card a {
+        font-size: 16px;
+        padding: 11px 25px;
+        margin-left: 5px;
+    }
+}
+
+
+/* 600px */
+
+@media (max-width: 600px) {
+
+    .services {
+        padding: 85px 15px 25px;
+    }
+
+    .service-heading h1 {
+        font-size: 43px;
+    }
+
+    .service-heading p {
+        font-size: 16px;
+    }
+
+    .service-heading p br {
+        display: none;
+    }
+
+    .service-category {
+        margin-top: 65px;
+        padding: 22px 18px;
+    }
+
+    .service-category h2 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 15px;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card p {
+        font-size: 19px;
+        margin: 18px 5px 22px;
+    }
+
+    .service-card a {
+        font-size: 15px;
+        padding: 10px 20px;
+        margin-left: 5px;
+    }
+}
+
+
+/* 400px */
+
+@media (max-width: 400px) {
+
+    .services {
+        padding: 75px 12px 20px;
+    }
+
+    .service-heading h1 {
+        font-size: 38px;
+    }
+
+    .service-heading p {
+        font-size: 15px;
+    }
+
+    .service-category {
+        margin-top: 55px;
+        padding: 30px 25px;
+    }
+
+    .service-category h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-card p {
+        font-size: 23px;
+        margin: 20px 10px 25px;
+    }
+
+    .service-card a {
+        font-size: 16px;
+        padding: 11px 28px;
+        margin-left: 10px;
+    }
+}
+
+
+/* 320px */
+
+@media (max-width: 320px) {
+
+    .services {
+        padding: 65px 10px 20px;
+    }
+
+    .service-heading h1 {
+        font-size: 34px;
+    }
+
+    .service-heading p {
+        font-size: 14px;
+    }
+
+    .service-category {
+        margin-top: 45px;
+        padding: 25px 15px;
+    }
+
+    .service-category h2 {
+        font-size: 27px;
+        margin-bottom: 20px;
+    }
+
+    .service-container {
+        gap: 30px;
+    }
+
+    .service-card p {
+        font-size: 21px;
+        margin: 16px 5px 22px;
+    }
+
+    .service-card a {
+        font-size: 15px;
+        padding: 10px 25px;
+        margin-left: 5px;
+    }
+}

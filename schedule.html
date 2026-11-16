@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/schedule.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner">
+            <div class="navigation">
+                <nav>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="./services.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                  </ul>
+               </nav>
+               <button class="burger" id="burger-button">&#9776;</button>
+               <button class="closer-nav" id="close-button">&#10005;</button>
+            </div>
+            <div class="miroir">
+                <p class="chic">Miroir Chic</p>
+            </div>
+            <div class="log">
+                <div class="svg">
+                    <img src="./images/user (2).png" alt="svg">
+                    <p class="login">Log In</p>
+                </div>
+                <div class="onee">
+                    <div class="child">
+                        <p>0</p>
+                    </div>
+                    <a href="./services.html">Book My Session</a>
+                </div>
+            </div>
+        </div>
+    </header>    
+    <main class="booking-page">
+
+        <a href="index.html" class="back-link">
+            <span class="back-arrow"></span>
+            Back
+        </a>
+
+        <section class="page-header">
+            <h1>Schedule your service</h1>
+            <p>
+                Check out our availability and book the date and time that works for you
+            </p>
+        </section>
+        <div class="filter-section">
+            <span>Filter by:</span>
+
+            <select>
+                <option>Staff Member (All)</option>
+                <option>Chloé Dubois</option>
+                <option>Lucian Valois</option>
+                <option>Élise Riveaux</option>
+            </select>
+        </div>
+
+        <section class="booking-layout">
+
+            <div class="schedule">
+
+                <div class="schedule-heading">
+                    <h2>Select a Date and Time</h2>
+
+                    <div class="timezone">
+                        <span>Time zone: Greenwich Mean Time (GMT)</span>
+                        <span class="down-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="schedule-content">
+                    <div class="calendar">
+
+                        <div class="calendar-header">
+
+                            <button class="month-arrow">
+                                &#10094;
+                            </button>
+
+                            <h3>November&nbsp; 2026</h3>
+
+                            <button class="month-arrow">
+                                &#10095;
+                            </button>
+
+                        </div>
+
+                        <div class="calendar-grid">
+
+                            <span class="weekday">Mon</span>
+                            <span class="weekday">Tue</span>
+                            <span class="weekday">Wed</span>
+                            <span class="weekday">Thu</span>
+                            <span class="weekday">Fri</span>
+                            <span class="weekday">Sat</span>
+                            <span class="weekday">Sun</span>
+
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+                            <span class="empty"></span>
+
+                            <button class="date available">1</button>
+                            <button class="date available">2</button>
+                            <button class="date available">3</button>
+                            <button class="date available">4</button>
+                            <button class="date available">5</button>
+                            <button class="date available">6</button>
+                            <button class="date available">7</button>
+                            <button class="date available">8</button>
+                            <button class="date available">9</button>
+                            <button class="date available">10</button>
+                            <button class="date selected">11</button>
+                            <button class="date available">12</button>
+                            <button class="date available">13</button>
+                            <button class="date available">14</button>
+                            <button class="date">15</button>
+                            <button class="date available">16</button>
+                            <button class="date available">17</button>
+                            <button class="date available">18</button>
+                            <button class="date available">19</button>
+                            <button class="date available">20</button>
+                            <button class="date available">21</button>
+                            <button class="date available">22</button>
+                            <button class="date available">23</button>
+                            <button class="date available">24</button>
+                            <button class="date available">25</button>
+                            <button class="date available">26</button>
+                            <button class="date available">27</button>
+                            <button class="date available">28</button>
+                            <button class="date">29</button>
+                            <button class="date available">30</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="time-section">
+
+                        <h3>
+                            Availability for Wednesday, 11 November
+                        </h3>
+
+                        <div class="time-grid">
+
+                            <button class="time selected-time">15:30</button>
+                            <button class="time">16:00</button>
+                            <button class="time">16:30</button>
+                            <button class="time">17:00</button>
+                            <button class="time">17:30</button>
+                            <button class="time">18:00</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <aside class="preferences">
+
+                <h2>Preferences</h2>
+
+                <div class="staff-section">
+
+                    <label for="staff">Staff Member *</label>
+
+                    <select id="staff">
+                        <option>Any staff member</option>
+                        <option>Chloé Dubois</option>
+                        <option>Lucian Valois</option>
+                        <option>Élise Riveaux</option>
+                    </select>
+
+                </div>
+
+                <div class="service-details">
+
+                    <h2>Service Details</h2>
+                    <p>Women's Cut &amp; Style</p>
+                    <details>
+                        <summary>More details</summary>
+                        <p>Professional haircut and styling service.</p>
+                    </details>
+                </div>
+                <button class="next-button">Next</button>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <nav class="footer-socials">
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                </ul>
+            </nav>
+
+            <nav class="footer-links">
+                <ul>
+                    <li><a href="./privacy.html">Privacy Policy</a></li>
+                    <li><a href="./terms.html">Terms & Conditions</a></li>
+                    <li><a href="./Accessibility.html">Accessibility Statement</a></li>
+                    <li><a href="./refund.html">Refund Policy</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-hours">
+                <p>Tues - Fri: 9am - 7pm</p>
+                <p>Sat: 9am - 5pm</p>
+                <p>Sun - Mon: Closed</p>
+            </div>
+
+            <h2 class="footer-logo">Miroir Chic</h2>
+
+            <div class="footer-contact">
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+                <p>123-456-7890</p>
+                <p>500 Terry Francine Street, San Francisco, CA 94158</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2035 by Miroir Chic. Powered and secured by <a href="#">Wix</a></p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

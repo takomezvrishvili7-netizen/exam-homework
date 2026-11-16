@@ -1,0 +1,320 @@
+@font-face {
+    font-family: "cormorant garamond";
+    src: url(./fonts/static/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contact-page{
+    width: 100%;
+    min-height: 750px;
+    display: flex;
+    background-color: #f9f2e9;
+    justify-content: space-between;
+    padding: 120px 30px 25px;
+    gap: 35px;
+}
+.contact-left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+.contact-left h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    font-weight: normal;
+    color: #443232;
+}
+.contact-subtitle{
+    font-family: "Heebo", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+.contact-info{
+    margin-top: auto;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.contact-photo{
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+.contact-photo img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+.contact-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 35px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 25px;
+}
+
+.form-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-field label {
+    font-family: "Heebo", sans-serif;
+    font-size: 16px;
+    color: #443232;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8b7770;
+    background: transparent;
+    outline: none;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.form-field textarea {
+    height: 100px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #8b7770;
+    background: transparent;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.contact-form button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #762d1e;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+
+/* რესპონსივები */
+
+
+
+@media (max-width: 1024px) {
+    .contact-page {
+        gap: 25px;
+        padding: 120px 25px 30px;
+    }
+
+    .contact-left {
+        width: 32%;
+    }
+
+    .contact-left h1 {
+        font-size: 65px;
+    }
+
+    .contact-subtitle {
+        font-size: 22px;
+    }
+
+    .contact-info {
+        font-size: 17px;
+    }
+
+    .contact-photo {
+        width: 22%;
+    }
+
+    .contact-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .contact-form {
+        width: 43%;
+    }
+
+    .name-fields {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-page {
+        flex-wrap: wrap;
+        padding: 110px 25px 40px;
+        gap: 30px;
+    }
+
+    .contact-left {
+        width: 45%;
+    }
+
+    .contact-left h1 {
+        font-size: 55px;
+    }
+
+    .contact-subtitle {
+        font-size: 20px;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        margin-top: 40px;
+    }
+
+    .contact-photo {
+        width: 45%;
+    }
+
+    .contact-photo img {
+        height: 280px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding-top: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .contact-page {
+        flex-direction: column;
+        padding: 100px 22px 35px;
+        gap: 30px;
+    }
+
+    .contact-left {
+        width: 100%;
+    }
+
+    .contact-left h1 {
+        font-size: 50px;
+    }
+
+    .contact-subtitle {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .contact-info {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    .contact-photo {
+        width: 100%;
+    }
+
+    .contact-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .contact-form {
+        width: 100%;
+        gap: 25px;
+        padding-top: 10px;
+    }
+
+    .name-fields {
+        gap: 15px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-page {
+        padding: 100px 18px 30px;
+    }
+
+    .contact-left h1 {
+        font-size: 43px;
+    }
+
+    .contact-subtitle {
+        font-size: 18px;
+    }
+
+    .contact-photo img {
+        height: 260px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .contact-page {
+        padding: 90px 15px 25px;
+    }
+
+    .contact-left h1 {
+        font-size: 38px;
+    }
+
+    .contact-photo img {
+        height: 230px;
+    }
+
+    .form-field label {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .contact-left h1 {
+        font-size: 34px;
+    }
+
+    .contact-subtitle {
+        font-size: 17px;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+
+    .contact-photo img {
+        height: 200px;
+    }
+
+    .contact-form button {
+        height: 45px;
+    }
+}

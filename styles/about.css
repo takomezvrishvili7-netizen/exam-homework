@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "cormorant garamond";
+    src: url(./fonts/static/CormorantGaramond-Regular.ttf);
+}
+@font-face {
+    font-family: "Heebo";
+    src: url(./fonts/Heebo-VariableFont_wght.ttf);
+}
+
+
+
+
+*{
+    margin: 0;
+    position: 0;
+    box-sizing: border-box;
+}
+.about-hero{
+    width: 100%;
+}
+.about-heading{
+    width: 100%;
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 25px 15px;
+    gap: 25px;
+    background-color: whitesmoke;
+}
+.about-heading h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 100px;
+    font-weight: normal;
+    color: #443232;
+}
+.about-heading p{
+    font-family: "Heebo", sans-serif;
+    font-size: 25px;
+    color: #443232;
+}
+.about-image{
+    width: 100%;
+    height: 550px;
+    display: block;
+}
+.vision{
+    width: 100%;
+    min-height: 800px;
+    background-color: #ffe6c1;
+    display: flex;
+    gap: 30px;
+    padding: 100px 0;
+}
+.vision img{
+    width: 48%;
+    height: 775px;
+    border-radius: 10px;
+}
+.vision-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    padding: 0 0 30px 25px;
+}
+.vision-text h1{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 80px;
+    font-weight: normal;
+    color: #443232;
+}
+.vision-text p{
+    font-family: "Heebo", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #443232;
+    line-height: 1.45;
+}
+.products{
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    gap: 30px;
+    padding: 100px 0;
+    background-color: #f9f2e9;
+}
+.products-text{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    justify-content: space-between;
+    padding: 0 25px 35px 10px;
+}
+.products-text h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 75px;
+    font-weight: 50;
+    color: #443232;
+}
+.products-text p{
+    font-family: "Heebo", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    color: #443232;
+    line-height: 1.45;
+}
+.products img{
+    width: 40%;
+    height: 600px;
+    border-radius: 10px;
+}
+
+/* რესპონსივები */
+
+
+@media (max-width: 1024px) {
+    .about-heading h1 {
+        font-size: 80px;
+    }
+
+    .about-heading p {
+        font-size: 22px;
+    }
+
+    .about-image {
+        height: 450px;
+    }
+
+    .vision {
+        flex-direction: column;
+        min-height: auto;
+        padding: 70px 30px;
+        gap: 30px;
+    }
+
+    .vision img {
+        width: 100%;
+        height: 550px;
+    }
+
+    .vision-text {
+        width: 100%;
+        padding: 0;
+        gap: 35px;
+    }
+
+    .vision-text h1 {
+        font-size: 65px;
+    }
+
+    .vision-text p {
+        font-size: 21px;
+    }
+
+    .products {
+        flex-direction: column;
+        min-height: auto;
+        padding: 70px 30px;
+        gap: 30px;
+    }
+
+    .products-text {
+        width: 100%;
+        padding: 0;
+        gap: 35px;
+    }
+
+    .products-text h2 {
+        font-size: 60px;
+    }
+
+    .products-text p {
+        font-size: 21px;
+    }
+
+    .products img {
+        width: 100%;
+        height: 550px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-heading {
+        min-height: 230px;
+        padding: 100px 20px 20px;
+    }
+
+    .about-heading h1 {
+        font-size: 65px;
+    }
+
+    .about-heading p {
+        font-size: 19px;
+    }
+
+    .about-image {
+        height: 380px;
+    }
+
+    .vision {
+        padding: 60px 25px;
+        gap: 25px;
+    }
+
+    .vision img {
+        height: 450px;
+    }
+
+    .vision-text h1 {
+        font-size: 55px;
+    }
+
+    .vision-text p {
+        font-size: 19px;
+    }
+
+    .products {
+        padding: 60px 25px;
+        gap: 25px;
+    }
+
+    .products-text h2 {
+        font-size: 55px;
+    }
+
+    .products-text p {
+        font-size: 19px;
+    }
+
+    .products img {
+        height: 450px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .about-heading {
+        min-height: 200px;
+        padding: 90px 15px 20px;
+        gap: 15px;
+    }
+
+    .about-heading h1 {
+        font-size: 52px;
+    }
+
+    .about-heading p {
+        font-size: 17px;
+    }
+
+    .about-image {
+        height: 320px;
+    }
+
+    .vision {
+        padding: 45px 20px;
+        gap: 20px;
+    }
+
+    .vision img {
+        height: 350px;
+    }
+
+    .vision-text {
+        gap: 25px;
+    }
+
+    .vision-text h1 {
+        font-size: 45px;
+    }
+
+    .vision-text p {
+        font-size: 17px;
+    }
+
+    .products {
+        padding: 45px 20px;
+        gap: 20px;
+    }
+
+    .products-text {
+        gap: 25px;
+    }
+
+    .products-text h2 {
+        font-size: 45px;
+    }
+
+    .products-text p {
+        font-size: 17px;
+    }
+
+    .products img {
+        height: 350px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .about-heading {
+        min-height: 180px;
+        padding: 85px 12px 15px;
+    }
+
+    .about-heading h1 {
+        font-size: 43px;
+    }
+
+    .about-heading p {
+        font-size: 15px;
+    }
+
+    .about-image {
+        height: 270px;
+    }
+
+    .vision {
+        padding: 35px 15px;
+    }
+
+    .vision img {
+        height: 300px;
+    }
+
+    .vision-text h1 {
+        font-size: 40px;
+    }
+
+    .vision-text p {
+        font-size: 16px;
+    }
+
+    .products {
+        padding: 35px 15px;
+    }
+
+    .products-text h2 {
+        font-size: 40px;
+    }
+
+    .products-text p {
+        font-size: 16px;
+    }
+
+    .products img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .about-heading h1 {
+        font-size: 37px;
+    }
+
+    .about-heading p {
+        font-size: 14px;
+    }
+
+    .about-image {
+        height: 240px;
+    }
+
+    .vision img {
+        height: 260px;
+    }
+
+    .vision-text h1 {
+        font-size: 35px;
+    }
+
+    .vision-text p {
+        font-size: 15px;
+    }
+
+    .products-text h2 {
+        font-size: 35px;
+    }
+
+    .products-text p {
+        font-size: 15px;
+    }
+
+    .products img {
+        height: 260px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .about-heading h1 {
+        font-size: 32px;
+    }
+
+    .about-heading p {
+        font-size: 13px;
+    }
+
+    .about-image {
+        height: 210px;
+    }
+
+    .vision {
+        padding: 30px 12px;
+    }
+
+    .vision img {
+        height: 230px;
+    }
+
+    .vision-text h1 {
+        font-size: 31px;
+    }
+
+    .vision-text p {
+        font-size: 14px;
+    }
+
+    .products {
+        padding: 30px 12px;
+    }
+
+    .products-text h2 {
+        font-size: 31px;
+    }
+
+    .products-text p {
+        font-size: 14px;
+    }
+
+    .products img {
+        height: 230px;
+    }
+}
